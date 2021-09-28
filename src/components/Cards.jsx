@@ -1,15 +1,19 @@
 import React from "react";
-import { StyledCard } from "../styles/StyledCards";
+import { StyleCards } from "../styles/StyledCards";
 import CardCep from "./CardCep";
 import Bounce from "react-reveal/Bounce";
+import CardProducts from "./CardProducts";
 
 export default function Cards() {
   return (
-    <StyledCard>
+    <StyleCards>
       <Bounce left>
-        <CardCep />
-        <div>DIV2</div>
+        <div>
+          <CardCep />
+          <CardProducts />
+        </div>
+        <div>Resumo da compra</div>
       </Bounce>
-    </StyledCard>
+    </StyleCards>
   );
 }
