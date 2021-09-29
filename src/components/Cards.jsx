@@ -3,6 +3,7 @@ import { StyleCards } from "../styles/StyledCards";
 import CardCep from "./CardCep";
 import Bounce from "react-reveal/Bounce";
 import CardProducts from "./CardProducts";
+import CardResume from "./CardResume";
 
 export default function Cards() {
   return (
@@ -12,7 +13,9 @@ export default function Cards() {
           <CardCep />
           <CardProducts />
         </div>
-        <div>Resumo da compra</div>
+        <div>
+          <CardResume />
+        </div>
       </Bounce>
     </StyleCards>
   );

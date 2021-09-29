@@ -1,10 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const StyleCards = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
   background-color: #f1f1f1;
+
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 5rem;
@@ -21,6 +22,59 @@ const StyleCard = styled.div`
   @media (min-width: 1024px) {
     border: none;
   }
+
+  ${(props) =>
+    props.position &&
+    css`
+      position: sticky;
+      top: 0;
+    `}
+
+  ${(props) =>
+    props.products &&
+    css`
+      .cardProducts__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        svg {
+          color: var(--primary-color);
+          margin-right: 0.5rem;
+          width: 32px;
+          height: 43px;
+        }
+
+        h2 {
+          font-size: 1.1rem;
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+      }
+
+      .cardProducts__footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        button {
+          display: flex;
+          align-items: center;
+          padding: 0.375rem 1rem;
+          background-color: transparent;
+          border: 1px solid #ff0000;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          border-radius: 0.4rem;
+          color: #ff0000;
+          font-weight: 900;
+          cursor: pointer;
+
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    `}
 `;
 
 const StyleCardCep = styled.div`
@@ -40,6 +94,7 @@ const StyleCardCep = styled.div`
     h2 {
       font-size: 1.1rem;
       font-weight: 900;
+      text-transform: uppercase;
     }
   }
 
@@ -86,6 +141,9 @@ const StyleCardCep = styled.div`
 const StyleCardProducts = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--primary-color);
 
   a {
     display: flex;
@@ -175,4 +233,124 @@ const StyleCardProducts = styled.div`
   }
 `;
 
-export { StyleCards, StyleCard, StyleCardCep, StyleCardProducts };
+const StyleCardResume = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  .cardResume__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    svg {
+      color: var(--primary-color);
+      margin-right: 0.5rem;
+      width: 32px;
+      height: 43px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+
+  .cardResume__prices {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #595959;
+
+    .prices__text {
+      color: #595959;
+    }
+    .prices__value {
+      font-weight: bold;
+    }
+  }
+
+  .cardResume__freight {
+    display: flex;
+    justify-content: space-between;
+
+    .prices__text {
+      color: #595959;
+    }
+    .prices__value {
+      font-weight: bold;
+    }
+  }
+
+  .cardResume__priceAll {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    margin-top: 1rem;
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+
+      .prices__text {
+        color: #595959;
+      }
+      .prices__value {
+        font-weight: bold;
+        font-size: 2rem;
+        color: var(--primary-color);
+      }
+    }
+
+    .discount {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+  }
+
+  .cardResume__actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    button {
+      display: flex;
+      margin-bottom: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      padding: 1rem 0;
+      border-radius: 0.3rem;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .action__buy {
+      background-color: var(--secondary-color);
+      border: none;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    .action__buy:hover {
+      filter: brightness(0.9);
+    }
+
+    .action__continue {
+      background-color: transparent;
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+  }
+`;
+
+export {
+  StyleCards,
+  StyleCard,
+  StyleCardCep,
+  StyleCardProducts,
+  StyleCardResume,
+};

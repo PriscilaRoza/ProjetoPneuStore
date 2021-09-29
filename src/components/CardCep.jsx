@@ -9,10 +9,12 @@ export default function CardCep() {
           <img src={localizationIcon} alt="icone de localização" />
           <h2>Informe o seu CEP</h2>
         </div>
+
         <div className="cardCep__search">
           <input type="search" autocomplete="off" placeholder="Inserir CEP" />
           <button>Calcular</button>
         </div>
+
         <div className="cardCep__link">
           <a href="#123">Não sei meu CEP</a>
         </div>
