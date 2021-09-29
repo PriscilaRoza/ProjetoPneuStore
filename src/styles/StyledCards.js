@@ -298,6 +298,8 @@ const StyleCardResume = styled.div`
       }
       .prices__value {
         font-weight: bold;
+        font-size: 2rem;
+        color: var(--primary-color);
       }
     }
 
