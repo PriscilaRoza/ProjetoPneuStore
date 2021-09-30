@@ -160,6 +160,7 @@ export const LoginOK = styled.div`
 // -------------------------------------------------------
 
 export const BarraDiv = styled.div`
+
   /* width: 100%; */
   height: 3.125rem;
   background-color: var(--secondary-color);
@@ -205,3 +206,4 @@ export const Back = styled.img`
   @media (min-width: 1024px) {
   }
 `;
+

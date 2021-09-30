@@ -1,11 +1,16 @@
 import React from "react";
 import Cards from "../components/Cards";
+import Header from '../components/Header'
+import Banner from '../components/Banner'
+
 
 export default function Home() {
   return (
     <div>
-      header
+      <Header />
+      <Banner />
       <Cards />
+      
     </div>
   );
 }
