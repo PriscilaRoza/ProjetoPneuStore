@@ -27,7 +27,7 @@ const StyleCard = styled.div`
     props.position &&
     css`
       position: sticky;
-      top: 0;
+      top: 13vh;
     `}
 
   ${(props) =>
