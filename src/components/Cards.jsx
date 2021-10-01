@@ -4,6 +4,7 @@ import CardCep from "./CardCep";
 import Bounce from "react-reveal/Bounce";
 import CardProducts from "./CardProducts";
 import CardResume from "./CardResume";
+import CardServices from "./CardServices";
 
 export default function Cards() {
   return (
@@ -12,6 +13,7 @@ export default function Cards() {
         <div>
           <CardCep />
           <CardProducts />
+          <CardServices />
         </div>
         <div>
           <CardResume />

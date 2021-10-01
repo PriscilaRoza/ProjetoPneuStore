@@ -1,5 +1,5 @@
 import * as S from '../styles/styled';
-import Cart from '../styles/cart.svg';
+import Cart from '../assets/images/cart.svg';
 
 function Banner() {
     return(

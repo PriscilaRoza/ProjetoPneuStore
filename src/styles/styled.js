@@ -7,7 +7,7 @@ export const HeaderTop = styled.div`
     top: 0;
     display: flex;
     width: 100%;
-    
+    z-index: 999;
     height: 12vh;
     
     
@@ -24,6 +24,7 @@ export const HeaderTop = styled.div`
         align-items: center;
         justify-content: center;
         padding: 0 50px;
+        min-width: 0;
         
     }
     @media (min-width: 1024px) {
@@ -47,7 +48,7 @@ export const IconDown = styled.img`
     z-index: 90;
     margin-left: -25px;
     @media (max-width: 768px) {
-        visibility: hidden;
+        display: none;
   }
     @media (min-width: 1024px) {
         
@@ -68,7 +69,7 @@ export const Logo = styled.img`
     @media (max-width: 768px) {
         margin: 0 50px;
         justify-content: center;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
     @media (min-width: 1024px) {
 
@@ -129,7 +130,7 @@ export const Search = styled.div`
     }   
     }
     img {
-        float: right;
+        /* float: right; */
         padding: 0 20px;
         
     }
@@ -169,7 +170,7 @@ export const LoginOK = styled.div`
     }
     
     @media (max-width: 768px) {
-        visibility: hidden;
+        display:none;
         
         
     }
@@ -201,9 +202,9 @@ export const BarraDiv = styled.div`
     
     @media (max-width: 768px) {
         font-size: 1.0rem;
-        /* max-width: 1168px; */
-        min-width: 500px;
+        min-width: 0;
         justify-content: normal;
+        transition: 0.2;
         padding: 0 50px;
         align-items: center;
         display: flex;
@@ -234,12 +235,9 @@ export const Back =  styled.img`
     visibility: hidden;
     @media (max-width: 768px) {
         visibility: visible;
-        /* margin-left: -86px; */
+        /* margin-right: 55px; */
         float: left;
-        
-        
     }
     @media (min-width: 1024px) {
-        
     }
 `;
