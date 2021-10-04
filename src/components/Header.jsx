@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/global.css';
 import * as S from '../styles/styled';
-import LogoImg from '../styles/PneuStore.svg';
-import Search from '../styles/search.svg';
-import down from '../styles/down.svg';
-import Back from '../styles/back.svg';
-import User from '../styles/user.svg';
+import LogoImg from '../assets/images/PneuStore.svg';
+import Search from '../assets/images/search.svg';
+import down from '../assets/images/down.svg';
+import Back from '../assets/images/back.svg';
+import User from '../assets/images/user.svg';
 
 
 function Header() {
@@ -17,7 +17,7 @@ function Header() {
         <S.Search>
             <S.Input placeholder=" Pesquise por Marca e Medida (exemplo 205/55R16)"/>
             <S.ButtonGlass>
-                <img src={Search} />
+                <img src={Search} alt="imagem search" />
             </S.ButtonGlass>
         </S.Search>
 

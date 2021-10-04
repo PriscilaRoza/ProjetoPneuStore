@@ -1,20 +1,26 @@
 import styled from "styled-components";
 
 export const HeaderTop = styled.div`
-  position: sticky;
-  top: 0;
-  display: flex;
-  width: 100%;
-
-  height: 12vh;
-
-  justify-content: center;
-  margin: auto;
-  min-width: 31.25rem;
-  max-width: 100vw;
-  align-items: center;
-
-  z-index: 999;
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    z-index: 999;
+    height: 12vh;
+    justify-content: center;
+    margin: auto;
+    min-width: 31.25rem;
+    max-width: 100vw;
+    align-items: center;
+    /* padding-right: 100px; */
+    background-color: var(--primary-color);
+    @media (max-width: 768px) {
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+        min-width: 0;
+        
+    }
 
   /* padding-right: 100px; */
   background-color: var(--primary-color);
@@ -23,8 +29,6 @@ export const HeaderTop = styled.div`
     justify-content: center;
     padding: 0 50px;
     min-width: 0;
-  }
-  @media (min-width: 1024px) {
   }
 `;
 export const Lgn = styled.div`
@@ -36,13 +40,13 @@ export const Lgn = styled.div`
   height: 33px;
 `;
 export const IconDown = styled.img`
-  margin-top: 33px;
-  width: 10px;
-  height: 10px;
-  z-index: 90;
-  margin-left: -25px;
-  @media (max-width: 768px) {
-    display: none;
+    margin-top: 33px;
+    width: 10px;
+    height: 10px;
+    z-index: 90;
+    margin-left: -25px;
+    @media (max-width: 768px) {
+        display: none;
   }
   @media (min-width: 1024px) {
   }
@@ -51,15 +55,18 @@ export const IconDown = styled.img`
 export const Container = styled.div``;
 
 export const Logo = styled.img`
-  max-width: 10.5rem;
-  /* width: 100%; */
+    max-width: 10.5rem;
+    /* width: 100%; */
 
+    @media (max-width: 768px) {
+        margin: 0 50px;
+        justify-content: center;
+        /* justify-content: space-around; */
+    }
   @media (max-width: 768px) {
     margin: 0 50px;
     justify-content: center;
     justify-content: space-around;
-  }
-  @media (min-width: 1024px) {
   }
 `;
 
@@ -98,19 +105,24 @@ export const Search = styled.div`
       /* padding-left: 150px; */
     }
     @media (min-width: 1024px) {
-      width: 48px;
-      height: 35px;
-      background-color: var(--secondary-color);
-      border-radius: 5px;
-      border: none;
-      align-items: center;
-      z-index: 0;
-      margin-top: 25px;
-      margin-right: 40px;
-      margin-left: -2px;
-      opacity: 0.5;
+        width: 48px;
+        height: 35px;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+        border:none;
+        align-items: center;
+        z-index:0;
+        margin-top:25px;
+        margin-right:40px;
+        margin-left:-2px;
+        opacity: 0.5;
+    }   
     }
-  }
+    img {
+        /* float: right; */
+        padding: 0 20px;
+        
+    }
   img {
     float: right;
     padding: 0 20px;
@@ -133,31 +145,25 @@ export const IconCar = styled(Icon)`
 `;
 
 export const LoginOK = styled.div`
-  color: #fff;
-  display: flex;
-  & img {
-    width: 50px;
-    height: 40px;
-    margin-top: 0.19rem;
-  }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-  @media (min-width: 1024px) {
-    font-size: 1rem;
-  }
+    color: #fff;
+    display: flex;
+    & img {
+        width: 50px;
+        height: 40px;
+        margin-top: 0.19rem;
+    }
+    
+    @media (max-width: 768px) {
+        display:none;
+        
+        
+    }
+    @media (min-width: 1024px) {
+        font-size: 1rem;
+        
+    }
 `;
-// export const Login = styled.p`
-//     color: #fff;
-//     @media (max-width: 768px) {
-//         visibility: hidden;
-//     }
-//     @media (max-width: 1024px) {
-//         font-size: 1rem;
-//     }
-// `;
-// -------------------------------------------------------
+
 
 export const BarraDiv = styled.div`
 
@@ -177,10 +183,18 @@ export const BarraDiv = styled.div`
     padding: 0 50px;
     align-items: center;
     display: flex;
-    flex-direction: row;
   }
-  @media (min-width: 1024px) {
-  }
+    
+    @media (max-width: 768px) {
+        font-size: 1.0rem;
+        min-width: 0;
+        justify-content: normal;
+        transition: 0.2;
+        padding: 0 50px;
+        align-items: center;
+        display: flex;
+        flex-direction: row ;        
+    }
 `;
 export const TextoDiv = styled.h2`
   color: #4e008e;
@@ -203,7 +217,6 @@ export const Back = styled.img`
     /* margin-left: -86px; */
     float: left;
   }
-  @media (min-width: 1024px) {
-  }
+
 `;
 
