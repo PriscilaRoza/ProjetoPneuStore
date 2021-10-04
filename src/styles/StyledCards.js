@@ -145,13 +145,12 @@ const StyleCardProducts = styled.div`
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--primary-color);
 
-  a {
+  .cardsProducts {
     display: flex;
 
     .cardProducts__image {
       display: flex;
       align-items: center;
-
       img {
         width: 70px;
         height: 70px;
@@ -347,7 +346,7 @@ const StyleCardResume = styled.div`
   }
 `;
 
-  const StyleCardServices = styled.div`
+const StyleCardServices = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
@@ -398,19 +397,19 @@ const StyleCardResume = styled.div`
     }
     .serviceBanner{
       box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 90px;
-    padding: 1rem;
-    font-size: 1.25rem;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 1.1;
-    color: #fff;
-    background-repeat: no-repeat;
-    background-position: top left, top right;
-    background-image: linear-gradient(90deg, #4e008e 40%, rgba(138, 172, 3, 0) 80%), url('https://www.pneustore.com.br/_ui/responsive/theme-pneustorePurple/images/delivery-header.png');
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 90px;
+      padding: 1rem;
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #fff;
+      background-repeat: no-repeat;
+      background-position: top left, top right;
+      background-image: linear-gradient(90deg, #4e008e 40%, rgba(138, 172, 3, 0) 80%), url('https://www.pneustore.com.br/_ui/responsive/theme-pneustorePurple/images/delivery-header.png');
     }
     .option{
       display: grid;
@@ -427,11 +426,11 @@ const StyleCardResume = styled.div`
 }
     
     .col-2{
-    flex-basis: 40%;
-    display: grid;
-    place-items: center;
-    margin-top: 1rem;
-    padding: 1rem;
+      flex-basis: 40%;
+      display: grid;
+      place-items: center;
+      margin-top: 1rem;
+      padding: 1rem;
 }
   `;
 
