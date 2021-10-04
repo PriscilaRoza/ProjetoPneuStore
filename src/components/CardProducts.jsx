@@ -13,7 +13,7 @@ export default function CardProducts() {
         <div>
           <GiShoppingBag />
         </div>
-        <h2>Produtos ({data.length})</h2>
+        <h2>Produtos ({data && data.length})</h2>
       </div>
       {data &&
         data.map((product) => (
