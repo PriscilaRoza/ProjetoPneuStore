@@ -145,13 +145,12 @@ const StyleCardProducts = styled.div`
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--primary-color);
 
-  a {
+  .cardsProducts {
     display: flex;
 
     .cardProducts__image {
       display: flex;
       align-items: center;
-
       img {
         width: 70px;
         height: 70px;
@@ -347,10 +346,99 @@ const StyleCardResume = styled.div`
   }
 `;
 
+const StyleCardServices = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  .service__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    width: 32px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  h4 {
+    color: var(--primary-color);
+  }
+  svg {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    width: 32px;
+    height: 43px;
+  }
+  span {
+    font-weight: bold;
+  }
+  ul {
+    border-left: 3px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 15px;
+  }
+  .cardservice__ {
+    display: flex;
+    background-color: #f1f1f1;
+    height: 50px;
+    align-items: center;
+  }
+  input {
+  }
+  .serviceBanner {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    background-image: linear-gradient(
+        90deg,
+        #4e008e 40%,
+        rgba(138, 172, 3, 0) 80%
+      ),
+      url("https://www.pneustore.com.br/_ui/responsive/theme-pneustorePurple/images/delivery-header.png");
+  }
+  .option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+  }
+  .col-1 {
+    flex-basis: 60%;
+    align-items: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .col-2 {
+    flex-basis: 40%;
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+`;
+
 export {
   StyleCards,
   StyleCard,
   StyleCardCep,
   StyleCardProducts,
   StyleCardResume,
+  StyleCardServices,
 };
