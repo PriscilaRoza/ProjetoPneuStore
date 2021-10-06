@@ -391,7 +391,9 @@ const StyleCardServices = styled.div`
       background-color: #F1F1F1;
       height: 50px;
       align-items: center;
-
+       img{
+         margin-left: 10px;
+       }
     }
     input{
     }
@@ -431,6 +433,14 @@ const StyleCardServices = styled.div`
       place-items: center;
       margin-top: 1rem;
       padding: 1rem;
+
+      input{
+        width: 20px;
+        height: 20px;
+        outline: none;
+        margin-top:-20px;
+        margin-bottom: 20px;
+      }
 }
   `;
 

@@ -1,7 +1,8 @@
 import React from "react";
 import Cards from "../components/Cards";
-import Header from '../components/Header'
-import Banner from '../components/Banner'
+import Header from '../components/Header';
+import Banner from '../components/Banner';
+
 
 
 export default function Home() {
@@ -9,8 +10,7 @@ export default function Home() {
     <div>
       <Header />
       <Banner />
-      <Cards />
-      
+      <Cards /> 
     </div>
   );
 }
