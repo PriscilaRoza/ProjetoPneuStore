@@ -2,10 +2,11 @@ import React from "react";
 import { StyleCard, StyleCardProducts } from "../styles/StyledCards";
 import { MdDelete } from "react-icons/md";
 import { GiShoppingBag } from "react-icons/gi";
-import useGetGamesApi from "../hooks/useGetGamesApi";
+import useGetApi from "../hooks/useGetApi";
 import { api } from "../services/api";
 export default function CardProducts() {
-  const { data } = useGetGamesApi(api.readAllGames());
+  const { data } = useGetApi(api.readAllGames());
+  console.log(data);
 
   return (
     <StyleCard products>
@@ -13,7 +14,7 @@ export default function CardProducts() {
         <div>
           <GiShoppingBag />
         </div>
-        <h2>Produtos ({data && data.length})</h2>
+        <h2>Produtos ({data && data.length > 0 ? data.length : 0})</h2>
       </div>
       {data &&
         data.map((product) => (

@@ -1,7 +1,7 @@
 import React from "react";
 import localizationIcon from "../assets/images/localization-icon.svg";
 import { StyleCardCep, StyleCard } from "../styles/StyledCards";
-export default function CardCep() {
+export default function CardCep(props) {
   return (
     <StyleCard>
       <StyleCardCep>
@@ -12,7 +12,7 @@ export default function CardCep() {
 
         <div className="cardCep__search">
           <input type="search" autocomplete="off" placeholder="Inserir CEP" />
-          <button>Calcular</button>
+          <button onClick={props.handleActive}>Calcular</button>
         </div>
 
         <div className="cardCep__link">

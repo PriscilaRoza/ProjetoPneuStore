@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 
-export default function useGetGamesApi(url) {
+export default function useGetApi(url) {
   const [data, setData] = useState();
 
   const loadData = useCallback((url) => {
@@ -14,6 +14,7 @@ export default function useGetGamesApi(url) {
         console.log(error);
       });
   }, []);
+
   useEffect(() => {
     loadData(url);
   }, [url, loadData]);
