@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 import { StyleCardServices, StyleCard } from "../styles/StyledCards";
 import { FiTruck } from "react-icons/fi";
-import Truck from '../assets/images/truck.svg';
-import CentroMontagem from '../assets/images/centroMontagem.svg';
-import House from '../assets/images/house.svg';
+import Truck from "../assets/images/truck.svg";
+import CentroMontagem from "../assets/images/centroMontagem.svg";
+import House from "../assets/images/house.svg";
 
-export default function CardServices() {
-    return(
+export default function CardServices(props) {
+  console.log(props.active);
+  return (
+    <>
+      {props.active && (
         <StyleCard>
             <StyleCardServices>
                 <form>
@@ -93,5 +96,7 @@ export default function CardServices() {
                     </form>
             </StyleCardServices>
         </StyleCard>
-    );
+      )}
+    </>
+  );
 }
