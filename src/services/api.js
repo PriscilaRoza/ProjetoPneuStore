@@ -1,8 +1,8 @@
 export const api = {
   // Base Url
-  baseUrl: "http://localhost:3001",
+  baseUrl: "https://pneustoreapi20211004232226.azurewebsites.net",
 
-  readAllGames: () => `${api.baseUrl}/games`,
+  readAllGames: () => `${api.baseUrl}/pneu`,
 
   buildApiGetRequest: (url) =>
     fetch(url, {
