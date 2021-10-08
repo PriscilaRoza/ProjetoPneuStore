@@ -5,11 +5,10 @@ import Truck from "../assets/images/truck.svg";
 import CentroMontagem from "../assets/images/centroMontagem.svg";
 import House from "../assets/images/house.svg";
 
-export default function CardServices(props) {
-  console.log(props.active);
+export default function CardServices({ active }) {
   return (
     <>
-      {props.active && (
+      {active && (
         <StyleCard>
             <StyleCardServices>
                 <form>

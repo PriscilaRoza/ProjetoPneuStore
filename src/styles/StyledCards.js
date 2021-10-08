@@ -347,30 +347,16 @@ const StyleCardResume = styled.div`
 `;
 
 const StyleCardServices = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    .service__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  .service__title {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    }
+  }
 
-    img {
-      color: var(--primary-color);
-      margin-right: 0.5rem;
-      width: 32px;
-    }
-
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-    h4 {
-      color: var(--primary-color);
-    }
-    svg{
+  img {
     color: var(--primary-color);
           margin-right: 0.5rem;
           width: 32px;
@@ -444,6 +430,14 @@ const StyleCardServices = styled.div`
 }
   `;
 
+  .col-2 {
+    flex-basis: 40%;
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+`;
 
 export {
   StyleCards,
