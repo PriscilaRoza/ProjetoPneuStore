@@ -7,7 +7,6 @@ export default function useGetApi(url) {
     fetch(url)
       .then((response) => response.json())
       .then((response) => {
-        console.log(response);
         setData(response);
       })
       .catch((error) => {
