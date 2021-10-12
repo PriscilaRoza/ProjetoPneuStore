@@ -14,12 +14,15 @@ export default function CardProducts() {
         <div>
           <GiShoppingBag />
         </div>
-        <h2>Produtos ({data && data.length > 0 ? data.length : 0})</h2>
+        <h2>
+          Produtos ({data && data.results.lenght > 0 ? data.results.length : 0})
+        </h2>
       </div>
       {data &&
-        data.map((product) => (
+        data.results.map((product) => (
           <StyleCardProducts key={product.id}>
             <div className="cardsProducts">
+              git
               <div className="cardProducts__image">
                 <img src={product.cover} alt={product.title} />
               </div>
