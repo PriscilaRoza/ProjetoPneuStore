@@ -6,12 +6,11 @@ import CentroMontagem from "../assets/images/centroMontagem.svg";
 import House from "../assets/images/house.svg";
 import Modal from "./Modal";
 
-export default function CardServices(props) {
-  console.log(props.active);
+export default function CardServices({ active }) {
   return (
     <>
-      {props.active && (
-        <StyleCard>
+      {active && (
+        <StyleCard id="cardServices">
           <StyleCardServices>
             <form>
               <div className="service__title">

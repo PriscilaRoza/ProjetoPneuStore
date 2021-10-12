@@ -5,6 +5,9 @@ import Bounce from "react-reveal/Bounce";
 import CardProducts from "./CardProducts";
 import CardResume from "./CardResume";
 import CardServices from "./CardServices";
+import { api } from "../services/api";
+import useGetApi from "../hooks/useGetApi";
+
 import { HandleVisibility, HandleModalVisibility } from "../utils/helpers";
 import Modal from "./Modal";
 import ModalMovel from "./ModalMovel";
@@ -12,13 +15,17 @@ import ModalMovel from "./ModalMovel";
 export default function Cards() {
   const { handleButtonClick, modalVisible, handleBackgroundClick } =
     HandleModalVisibility();
+
+  const { data } = useGetApi(api.readAllGames());
   const { handleActive, active } = HandleVisibility();
+
   return (
     <StyleCards>
       <Bounce left>
         <div>
           <CardCep handleActive={handleActive} />
-          <CardProducts />
+          <CardProducts data={data} />
+
           <Bounce left when={active}>
             <CardServices
               active={active}
@@ -28,6 +35,7 @@ export default function Cards() {
             />
           </Bounce>
         </div>
+
         <div>
           <CardResume />
         </div>
