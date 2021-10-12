@@ -9,7 +9,6 @@ import { api } from "../services/api";
 import useGetApi from "../hooks/useGetApi";
 
 import { HandleVisibility, HandleModalVisibility } from "../utils/helpers";
-import Modal from "./Modal";
 import ModalMovel from "./ModalMovel";
 
 export default function Cards() {

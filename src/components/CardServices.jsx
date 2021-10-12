@@ -4,12 +4,11 @@ import { FiTruck } from "react-icons/fi";
 import Truck from "../assets/images/truck.svg";
 import CentroMontagem from "../assets/images/centroMontagem.svg";
 import House from "../assets/images/house.svg";
-import Modal from "./Modal";
 
-export default function CardServices({ active }) {
+export default function CardServices( props ) {
   return (
     <>
-      {active && (
+      {props.active && (
         <StyleCard id="cardServices">
           <StyleCardServices>
             <form>
