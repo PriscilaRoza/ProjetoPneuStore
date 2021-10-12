@@ -10,4 +10,19 @@ function HandleVisibility() {
   return { handleActive, active };
 }
 
-export { HandleVisibility };
+function HandleModalVisibility() {
+  const [modalVisible, setModalVisible] = useState(false);
+  const handleButtonClick = () => {
+    setModalVisible(true);
+  };
+  const handleBackgroundClick = () => {
+    setModalVisible(false);
+  };
+  return {
+    modalVisible,
+    setModalVisible,
+    handleBackgroundClick,
+    handleButtonClick,
+  };
+}
+export { HandleVisibility, HandleModalVisibility };

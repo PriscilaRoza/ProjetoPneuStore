@@ -4,6 +4,7 @@ import { FiTruck } from "react-icons/fi";
 import Truck from "../assets/images/truck.svg";
 import CentroMontagem from "../assets/images/centroMontagem.svg";
 import House from "../assets/images/house.svg";
+import Modal from "./Modal";
 
 export default function CardServices({ active }) {
   return (
@@ -42,7 +43,11 @@ export default function CardServices({ active }) {
                       </p>
                     </div>
                     <div className="col-2">
-                      <input name="delivery" type="radio" />
+                      <input
+                        onClick={props.handleButtonClick}
+                        name="delivery"
+                        type="radio"
+                      />
                       <div>
                         <span>A partir de R$ 123,60</span>
                       </div>

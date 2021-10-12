@@ -18,6 +18,7 @@ export default function CardProducts({ data }) {
         data.results.map((product) => (
           <StyleCardProducts key={product.id}>
             <div className="cardsProducts">
+              git
               <div className="cardProducts__image">
                 <img src={product.cover} alt={product.nomePneu} />
               </div>
