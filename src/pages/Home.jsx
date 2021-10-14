@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div>
       <Header />
+
       <Banner />
+
       <Cards />
     </div>
   );
