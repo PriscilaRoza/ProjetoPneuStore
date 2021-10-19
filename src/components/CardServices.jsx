@@ -5,7 +5,8 @@ import Truck from "../assets/images/truck.svg";
 import CentroMontagem from "../assets/images/centroMontagem.svg";
 import House from "../assets/images/house.svg";
 
-export default function CardServices( props ) {
+export default function CardServices(props) {
+  console.log(props.address);
   return (
     <>
       {props.active && (
