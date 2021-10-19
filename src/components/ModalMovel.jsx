@@ -4,6 +4,8 @@ import { Calendar } from "./Calendar";
 import caminhao from "../styles/img/caminhao.svg";
 import * as S from "../styles/styledModal";
 import Modal from "./Modal";
+import ComboUm from '../styles/img/1.svg';
+import ComboDois from '../styles/img/dois.svg';
 
 export default function ModalMovel(props) {
   return (
@@ -46,7 +48,7 @@ export default function ModalMovel(props) {
 
         <S.BodyServices>
           <div className="ServiceBox">
-            <img src={caminhao} alt="furadeira" />
+            <img src={ComboUm} alt="furadeira" />
             <div>
               <h3 className="ServiceName">Combo Básico 1 ou 2 Pneus</h3>
               <p className="ServiceName"> Montagem + balanceamento</p>
@@ -63,7 +65,7 @@ export default function ModalMovel(props) {
 
         <S.BodyServices>
           <div className="ServiceBox">
-            <img src={caminhao} alt="furadeira" />
+            <img src={ComboDois} alt="furadeira" />
             <div>
               <h3 className="ServiceName">Combo Básico 1 ou 2 Pneus</h3>
               <p className="ServiceName">
@@ -94,7 +96,7 @@ export default function ModalMovel(props) {
       <S.Date>
         <div>
           <h4>Selecione o dia da entrega/serviço</h4>
-          <div>
+          <div className="Calendar">
             <Calendar />
           </div>
         </div>
@@ -112,7 +114,7 @@ export default function ModalMovel(props) {
               <p>Valor do Frete: R$ 29,90</p>
               <label>
                 <input type="checkbox" />
-                Autorizo entrarem em contato comigo 24 horas antes da data de
+                 Autorizo entrarem em contato comigo 24 horas antes da data de
                 entrega.
               </label>
             </div>

@@ -16,17 +16,20 @@ export const ModalBackground = styled.div`
 `;
 export const ModalArea = styled.div`
   top: 0;
-  margin-top: 0;
-  margin: 10px 50px;
-  padding: 20px;
-  width: 70%;
+  /* margin-top: 200px; */
+  /* margin: 700px 0px; */
+  padding: 650px 20px 10px 20px;
+
+  width: 90%;
+  /* height: 100vh; */
   border-radius: 10px;
   background-color: #fff;
-  padding: 50;
   align-items: center;
   @media (max-width: 768px) {
-    margin: 0;
-    width: 100vh;
+    margin: 0px;
+    width: 100%;
+    margin-top: 550px;
+    /* padding-top: 800px 20px 10px 20px; */
   }
 `;
 // Modal móvel
@@ -69,17 +72,17 @@ export const Title = styled.div`
     button {
       display: block;
       display: flex;
-      align-items: center;
-      border: none;
+      /* align-items: center; */
+      /* border: none; */
       background-color: transparent;
       color: #4e008e;
-      font-size: 20px;
+      /* font-size: 20px; */
       margin-left: -15px;
       margin-right: 30px;
       cursor: pointer;
     }
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
   }
 `;
 export const Attention = styled.div`
@@ -99,6 +102,7 @@ export const Attention = styled.div`
     p {
       @media (max-width: 768px) {
         align-items: center;
+        margin: 5px;
         justify-content: center;
         display: block;
       }
@@ -111,6 +115,7 @@ export const Services = styled.div`
 `;
 export const TitleServices = styled.div`
   display: flex;
+  padding: 10px;
 
   h3 {
     color: #4e008e;
@@ -119,10 +124,11 @@ export const TitleServices = styled.div`
     margin-left: 20px;
   }
   h4 {
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
     color: gray;
   }
   .passo1 {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: -5px;
@@ -144,9 +150,13 @@ export const ProductName = styled.div`
   background-color: white;
   border: 1px solid gray;
   border-left: 4px solid #4e008e;
+  height: 50px;
+
   h3 {
     margin-left: 10px;
     color: gray;
+    align-items: center;
+    justify-content: center;
   }
 `;
 export const BodyServices = styled.div`
@@ -245,33 +255,40 @@ export const Date = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid gray;
+  .Calendar {
+    margin: 20px 100px;
+  }
 
   div {
     justify-content: space-around;
   }
   h4 {
     justify-content: center;
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    margin: 20px 50px 20px 70px;
   }
   @media (max-width: 768px) {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    .Calendar {
+      margin: 20px;
+    }
+    h4 {
+      margin: 20px 10px;
+      word-break: break-word;
+    }
   }
 `;
 export const Hours = styled.div`
-  width: 450px;
-  height: 500px;
-  top: 0;
   border-left: 1px solid gray;
-  align-items: center;
-  justify-content: center;
-  .finalizacao{
+
+  .finalizacao {
     margin-left: 40px;
     margin-top: 10px;
     line-height: 30px;
-  } button {
-    /* margin-left: 20px; */
+  }
+  button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,28 +303,40 @@ export const Hours = styled.div`
     height: 60px;
     margin-left: 30px;
     div h3 {
-      margin-left: 30px;
+      /* margin-left: 30px; */
     }
   }
   button:hover {
     background-color: #68dcfa;
   }
   @media (max-width: 768px) {
+    border: none;
     height: 200px;
+    margin-bottom: 20px;
     button {
       width: 300px;
-      margin-left: 70px;
+      margin: 20px 0 0 20px;
+    }
+    label {
+      word-break: break-word;
+    }
+    input{
+      margin: 5px;
+    }
+    .finalizacao {
+      margin: 50px 0 10px 0;
+      justify-content: center;
     }
   }
 `;
 
 export const Buttons = styled.div`
   padding-top: 1rem;
+  margin-bottom: 100px;
   /* margin-top: 10px; */
   display: flex;
   justify-content: flex-end;
   button {
-    border-width: 0;
     border-style: solid;
     border-color: #e2e8f0;
     width: 190px;
@@ -318,5 +347,11 @@ export const Buttons = styled.div`
   }
   button:hover {
     background-color: #68dcfa;
+  }
+  @media (max-width: 768px) {
+    
+    button {
+     margin-top: 190px;
+    }
   }
 `;
