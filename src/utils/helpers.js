@@ -4,7 +4,7 @@ function HandleVisibility() {
   const [active, setActive] = useState(false);
 
   const handleActive = () => {
-    setActive(!active);
+    setActive(true);
   };
 
   return { handleActive, active };
