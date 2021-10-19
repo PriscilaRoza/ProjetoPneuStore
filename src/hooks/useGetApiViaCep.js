@@ -1,15 +1,15 @@
 import { useState, useCallback, useEffect } from "react";
-import { api } from "../services/apiBase";
+import { apiViaCep } from "../services/apiViaCep";
 
-export default function useGetApi(url) {
-  const [data, setData] = useState();
+export default function useGetApiViaCep(url) {
+  const [dataCep, setDataCep] = useState();
 
   const loadData = useCallback((url) => {
-    api
+    apiViaCep
       .buildApiGetRequest(url)
       .then((response) => response.json())
       .then((response) => {
-        setData(response);
+        setDataCep(response);
       })
       .catch((error) => {
         console.log(error);
@@ -20,5 +20,5 @@ export default function useGetApi(url) {
     loadData(url);
   }, [url, loadData]);
 
-  return { data };
+  return { dataCep };
 }

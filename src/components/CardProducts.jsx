@@ -10,14 +10,16 @@ export default function CardProducts({ data }) {
         <div>
           <GiShoppingBag />
         </div>
-        <h2>Produtos ({data && data.length > 0 ? data.length : 0})</h2>
+        <h2>
+          Produtos ({data && data.results.length > 0 ? data.results.length : 0})
+        </h2>
       </div>
       {data &&
-        data.map((product) => (
+        data.results.map((product) => (
           <StyleCardProducts key={product.id}>
             <div className="cardsProducts">
               <div className="cardProducts__image">
-                <img src={product.cover} alt={product.nomePneu} />
+                <img src={product.linkimage} alt={product.nomePneu} />
               </div>
               <div className="cardProducts__content">
                 <div className="cardProducts__title">
@@ -26,7 +28,7 @@ export default function CardProducts({ data }) {
                 <div className="cardProducts__company">
                   <div>{product.marca}</div>
                 </div>
-                <div className="cardProducts__price">{product.year}</div>
+                <div className="cardProducts__price">R$ {product.preco}</div>
               </div>
             </div>
 

@@ -5,9 +5,8 @@ import Bounce from "react-reveal/Bounce";
 import CardProducts from "./CardProducts";
 import CardResume from "./CardResume";
 import CardServices from "./CardServices";
-import { api } from "../services/api";
+import { api } from "../services/apiBase";
 import useGetApi from "../hooks/useGetApi";
-
 import { HandleVisibility, HandleModalVisibility } from "../utils/helpers";
 import ModalMovel from "./ModalMovel";
 
@@ -15,7 +14,7 @@ export default function Cards() {
   const { handleButtonClick, modalVisible, handleBackgroundClick } =
     HandleModalVisibility();
 
-  const { data } = useGetApi(api.readAllGames());
+  const { data } = useGetApi(api.readAll());
   const { handleActive, active } = HandleVisibility();
 
   return (
