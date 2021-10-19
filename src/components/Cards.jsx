@@ -29,8 +29,6 @@ export default function Cards() {
               active={active}
               address={address}
               handleButtonClick={handleButtonClick}
-              modalVisible={modalVisible}
-              handleBackgroundClick={handleBackgroundClick}
             />
           </Bounce>
         </div>

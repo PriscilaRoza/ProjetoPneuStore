@@ -13,16 +13,20 @@ function HandleVisibility() {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    apiViaCep
-      .buildApiGetRequest(apiViaCep.readCep(cep))
-      .then((response) => response.json())
-      .then((response) => {
-        setAddress(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-      .finally(() => setActive(true));
+    if (cep) {
+      apiViaCep
+        .buildApiGetRequest(apiViaCep.readCep(cep))
+        .then((response) => response.json())
+        .then((response) => {
+          setAddress(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => setActive(true));
+    } else {
+      alert("Você precisa preencher o cep");
+    }
   };
 
   return { address, onChange, cep, onSubmit, active };
