@@ -1,5 +1,4 @@
 import React from "react";
-import { HandleModalVisibility } from "../utils/helpers";
 import { Calendar } from "./Calendar";
 import caminhao from "../styles/img/caminhao.svg";
 import * as S from "../styles/styledModal";
