@@ -5,7 +5,7 @@ function Modal(props) {
   return (
     <>
       {props.visible === true && (
-        <M.ModalBackground onClick={props.handleBackgroundClick}>
+        <M.ModalBackground >
           <M.ModalArea>{props.children}</M.ModalArea>
         </M.ModalBackground>
       )}

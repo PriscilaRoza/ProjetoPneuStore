@@ -113,7 +113,7 @@ export default function ModalMovel(props) {
               <p>Valor do Frete: R$ 29,90</p>
               <label>
                 <input type="checkbox" />
-                 Autorizo entrarem em contato comigo 24 horas antes da data de
+                Autorizo entrarem em contato comigo 24 horas antes da data de
                 entrega.
               </label>
             </div>
@@ -121,7 +121,7 @@ export default function ModalMovel(props) {
         </div>
       </S.Date>
       <S.Buttons>
-        <button>CANCELAR</button>
+        <button onClick={props.handleBackgroundClick}>CANCELAR</button>
         <button>CONFIRMAR</button>
       </S.Buttons>
     </Modal>
