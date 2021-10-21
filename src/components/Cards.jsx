@@ -15,7 +15,8 @@ export default function Cards() {
     HandleModalVisibility();
 
   const { data } = useGetApi(api.readAll());
-  const { address, onChange, cep, onSubmit, active } = HandleVisibility();
+  const { address, onChange, cep, onSubmit, active, addressValid } =
+    HandleVisibility();
 
   return (
     <StyleCards>
@@ -24,9 +25,9 @@ export default function Cards() {
           <CardCep onSubmit={onSubmit} onChange={onChange} cep={cep} />
           <CardProducts data={data} />
 
-          <Bounce left when={active}>
+          <Bounce left when={addressValid()}>
             <CardServices
-              active={active}
+              active={addressValid}
               address={address}
               handleButtonClick={handleButtonClick}
             />

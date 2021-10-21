@@ -5,6 +5,7 @@ function HandleVisibility() {
   const [active, setActive] = useState(false);
   const [cep, setCep] = useState("");
   const [address, setAddress] = useState([]);
+  const addressValid = () => Boolean(window.localStorage.getItem("address"));
 
   const onChange = (event) => {
     const { value } = event.target;
@@ -19,6 +20,7 @@ function HandleVisibility() {
         .then((response) => response.json())
         .then((response) => {
           setAddress(response);
+          window.localStorage.setItem("address", JSON.stringify(response));
         })
         .catch((error) => {
           console.log(error);
@@ -29,7 +31,7 @@ function HandleVisibility() {
     }
   };
 
-  return { address, onChange, cep, onSubmit, active };
+  return { address, onChange, cep, onSubmit, active, addressValid };
 }
 
 function HandleModalVisibility() {
