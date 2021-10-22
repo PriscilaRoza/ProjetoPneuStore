@@ -5,8 +5,8 @@ import Routes from "./Router";
 function App() {
   return (
     <div>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes />
       </BrowserRouter>
     </div>

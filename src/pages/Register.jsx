@@ -3,6 +3,8 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -23,7 +25,7 @@ const theme = createTheme({
   },
 });
 
-export default function Login() {
+export default function Register() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -50,7 +52,7 @@ export default function Login() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Login
+            Crie uma conta
           </Typography>
           <Box
             component="form"
@@ -78,7 +80,12 @@ export default function Login() {
               id="password"
               autoComplete="current-password"
             />
-
+            <Grid container>
+              <FormControlLabel
+                control={<Checkbox value="remember" color="primary" />}
+                label="Eu confirmo que li e concordo com o Termos & Condições"
+              />
+            </Grid>
             <Button
               color="primary"
               type="submit"
@@ -86,20 +93,8 @@ export default function Login() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Entrar
+              Finalizar Cadastro
             </Button>
-            <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Esqueci minha senha
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="/register" variant="body2">
-                  {"Não tem uma conta? Cadastre-se"}
-                </Link>
-              </Grid>
-            </Grid>
           </Box>
         </Box>
       </Container>
