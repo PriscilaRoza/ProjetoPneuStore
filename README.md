@@ -1,6 +1,5 @@
 # 🏁 Projeto PneuStore
 
-[TOC]
 
 ### 🧾Sobre 
 
