@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 🏁 Projeto PneuStore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[TOC]
 
-## Available Scripts
+### 🧾Sobre 
 
-In the project directory, you can run:
+Nosso projeto foi desenvolvido para melhorar a experiência dos usuários na parte do carrinho de compras do site. 
 
-### `npm start`
+Contamos com a colaboração da nossa equipe do Back-end que fez o nosso banco de dados para serem consumidos nesse projeto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Nossos diferenciais são: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Tela de login com autenticação; 
+- Banner para o cliente conhecer melhor os serviços antes de escolher as opções disponíveis;
+- Animações nos cards;
 
-### `npm test`
+### 💻Instalação
+Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta: [Node.js](https://nodejs.org/en/download/). Além disto é preciso ter um editor para trabalhar com o código, eu recomendo o [VSCode](https://code.visualstudio.com/download). Após a instalação dessas ferramentas para poder ter o projeto na sua máquina é necessário que execute esse seguinte comando no seu terminal/cmd:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`$ git clone https://github.com/PriscilaRoza/ProjetoPneuStore.git`
 
-### `npm run build`
+Após clonar o repositório, precisa instalar as dependências necessárias:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- npm  `$ npm install`  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  ou
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- yarn `$ yarn install`
 
-### `npm run eject`
+###  💡 Tecnologias usadas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- React JS;
+- Styled-Components;
+- Material UI.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅Executar projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para executar é preciso usar o seguinte comando:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- npm `$ npm start`
 
-## Learn More
+Ou
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- yarn `$ npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<table>   <tr>     <td align="center"><a href="https://www.linkedin.com/in/theusmaoliver/"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQFlAhoe51lCTQ/profile-displayphoto-shrink_800_800/0/1621903451411?e=1640217600&v=beta&t=9chyXOdulZ--HV_4-Zqfjs9Cm9SpgOi764ulv6M9UTk" width="100px;" alt=""/><br /><sub><b>Matheus Rodrigues</b></sub></a></td>    <td align="center"><a href="https://www.linkedin.com/in/daniel-diniz-106763106/"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQFlLoQtkunx4g/profile-displayphoto-shrink_800_800/0/1621380278402?e=1640217600&v=beta&t=wCD-9dRt-oaebklNTwlRumRcTx3tN1WnMYhdDVW8M94" width="100px;" alt=""/><br /><sub><b>Daniel Diniz</b></sub></a></td>     <td align="center"><a href="https://www.linkedin.com/in/desenvolvedor-rss/"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQFsQwwDJsTuHQ/profile-displayphoto-shrink_800_800/0/1628980673161?e=1640217600&v=beta&t=SfGoRTFQSQqxdEAy7PXBXkifUD2OsT0nj1WYTiF9Xmc" width="100px;" alt=""/><br /><sub><b>Ricardo Santos</b></sub></a></td>   </tr>   <tr>     <td align="center"><a href="https://www.linkedin.com/in/nivia-campos/"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQG67-1HwgJyiA/profile-displayphoto-shrink_800_800/0/1621290499297?e=1640217600&v=beta&t=2DVpk9jXQOp2B6UCBqEYbI0rR4dSdBHn-gWn6yrsqXY" width="100px;" alt=""/><br /><sub><b>Nivia Campos</b></sub></a></td>     <td align="center"><a href="https://www.linkedin.com/in/priscilaroza/"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQFAAwEra093TQ/profile-displayphoto-shrink_800_800/0/1619492036931?e=1640217600&v=beta&t=NBGxecQfV-ti4QQ4m76S1b8SI0ohSL61yua5XIQzM9A" width="100px;" alt=""/><br /><sub><b>Priscila Roza</b></sub></a></td>    <td align="center"><a href="https://www.linkedin.com/in/gabsdev/"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C5603AQFardS1N-1oVg/profile-displayphoto-shrink_800_800/0/1621896670181?e=1640217600&v=beta&t=UTx8UuPG43xKJyXEMWRZ-9KBDGo9woEYwpuYjmDR6mA" width="100px;" alt=""/><br /><sub><b>Gabriel Santana</b></sub></a></td>        </tr> </table>
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
