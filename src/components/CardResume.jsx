@@ -36,10 +36,9 @@ export default function CardResume() {
           </div>
         </div>
         <div className="cardResume__actions">
-          <button className="action__buy">
-            <NavLink to="/login">Ir para o pagamento</NavLink>
-          </button>
-
+          <NavLink to="/login">
+            <button className="action__buy">Ir para o pagamento</button>
+          </NavLink>
           <button className="action__continue">Continuar comprando</button>
         </div>
       </StyleCardResume>
