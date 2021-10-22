@@ -2,7 +2,7 @@ import React from "react";
 import localizationIcon from "../assets/images/localization-icon.svg";
 import { StyleCardCep, StyleCard } from "../styles/StyledCards";
 
-export default function CardCep({ onChange, onSubmit }) {
+export default function CardCep({ onChange, onSubmit, cep }) {
   return (
     <StyleCard>
       <StyleCardCep>
@@ -16,6 +16,7 @@ export default function CardCep({ onChange, onSubmit }) {
               type="search"
               autoComplete="off"
               placeholder="Inserir CEP"
+              value={cep}
               onChange={onChange}
             />
             <a href="#cardServices">
@@ -25,7 +26,13 @@ export default function CardCep({ onChange, onSubmit }) {
         </form>
 
         <div className="cardCep__link">
-          <a href="#123">Não sei meu CEP</a>
+          <a
+            href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Não sei meu CEP
+          </a>
         </div>
       </StyleCardCep>
     </StyleCard>

@@ -6,12 +6,15 @@ import Search from "../assets/images/search.svg";
 import down from "../assets/images/down.svg";
 import Back from "../assets/images/back.svg";
 import User from "../assets/images/user.svg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <S.HeaderTop>
       <S.Back src={Back} />
-      <S.Logo src={LogoImg} />
+      <NavLink to="/">
+        <S.Logo src={LogoImg} />
+      </NavLink>
       <S.Search>
         <S.Input placeholder=" Pesquise por Marca e Medida (exemplo 205/55R16)" />
         <S.ButtonGlass>

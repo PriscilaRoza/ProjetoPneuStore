@@ -315,7 +315,8 @@ const StyleCardResume = styled.div`
     flex-direction: column;
     margin-top: 1rem;
 
-    button {
+    a,
+    .action__continue {
       display: flex;
       margin-bottom: 0.5rem;
       align-items: center;
@@ -327,17 +328,26 @@ const StyleCardResume = styled.div`
       cursor: pointer;
     }
 
-    .action__buy {
+    a {
       background-color: var(--secondary-color);
       border: none;
       color: var(--primary-color);
       font-weight: 600;
     }
 
-    .action__buy:hover {
+    a:hover {
       filter: brightness(0.9);
     }
 
+    .action__buy {
+      background-color: transparent;
+      border: none;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
     .action__continue {
       background-color: transparent;
       border: 1px solid var(--primary-color);

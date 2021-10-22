@@ -9,7 +9,7 @@ export default function CardServices(props) {
   console.log(props.address);
   return (
     <>
-      {props.active && (
+      {props.active() && (
         <StyleCard id="cardServices">
           <StyleCardServices>
             <form>

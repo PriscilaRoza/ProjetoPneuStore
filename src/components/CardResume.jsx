@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleCard, StyleCardResume } from "../styles/StyledCards";
 import { RiFileSearchFill } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 
 export default function CardResume() {
   return (
@@ -35,7 +36,9 @@ export default function CardResume() {
           </div>
         </div>
         <div className="cardResume__actions">
-          <button className="action__buy">Ir para o pagamento</button>
+          <NavLink to="/login">
+            <button className="action__buy">Ir para o pagamento</button>
+          </NavLink>
           <button className="action__continue">Continuar comprando</button>
         </div>
       </StyleCardResume>
