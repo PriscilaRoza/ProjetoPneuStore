@@ -15,8 +15,7 @@ export default function Cards() {
     HandleModalVisibility();
 
   const { data } = useGetApi(api.readAll());
-  const { address, onChange, cep, onSubmit, active, addressValid } =
-    HandleVisibility();
+  const { address, onChange, cep, onSubmit, addressValid } = HandleVisibility();
 
   return (
     <StyleCards>
